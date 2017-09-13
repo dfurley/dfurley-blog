@@ -13,16 +13,16 @@ class PagesController extends Controller
 
    public function about()
    {
-   		return view('about');
+   		return view('pages.about');
    }
 
    public function blog()
    {
-   		return view('blog');
+   		return view('pages.blog');
    }
 
    public function contact()
    {
-   		return view('contact');
+   		return view('pages.contact');
    }
 }
