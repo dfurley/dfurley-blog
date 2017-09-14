@@ -2,8 +2,9 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
-Route::get('/blog', 'PagesController@blog');
 Route::get('/contact', 'PagesController@contact');
+
+Route::get('/posts', 'PostsController@index');
 
 Auth::routes();
 

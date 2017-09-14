@@ -83,9 +83,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="{!! url('/about') !!}">About</a>
-                    <a href="{!! url('/blog') !!}">Blog</a>
+                    <a href="{!! url('/posts') !!}">Blog</a>
                     <a href="{!! url('/contact') !!}">Contact</a>
+                    <a href="{!! url('/about') !!}">About</a>
                     <a href="https://github.com/dfurley">GitHub</a>
                 </div>
             </div>
