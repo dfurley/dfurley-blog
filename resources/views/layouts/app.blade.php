@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="app">      
-        @include('partials.nav')
+        @include('layouts.nav')
         
         @yield('content')
     </div>
