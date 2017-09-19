@@ -7,7 +7,7 @@
 
   <p class="blog-post-meta">
     {{ $post->created_at->toFormattedDateString() }} by
-    {{ $post->user->name }}
+	{{ $post->user->name }}
   </p>
 
   {{ $post->body }}
