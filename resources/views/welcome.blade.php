@@ -62,6 +62,18 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            #flash-message {
+                position: absolute;
+                bottom: 100px;
+                margin: auto;
+                z-index: 10;
+                animation: flash-message 8s forwards;
+            }
+            @keyframes flash-message {
+                0%   {opacity: 1;}
+                100% {opacity: 0; display:none;}
+            }
         </style>
     </head>
     <body>
@@ -74,6 +86,12 @@
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
+                </div>
+            @endif
+
+            @if ($flash = session('message'))
+                <div id="flash-message" class="alert alert-success" role="alert">
+                    {{ $flash }}
                 </div>
             @endif
 
@@ -92,3 +110,4 @@
         </div>
     </body>
 </html>
+

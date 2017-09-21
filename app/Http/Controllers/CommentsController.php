@@ -16,12 +16,12 @@ class CommentsController extends Controller
 	      	
 	   		$post->addComment(request('body', $post));
 
-	   		// session()->flash('message', 'Your comment has been submitted.');
+	   		session()->flash('message', 'Your comment has been submitted.');
 
 	   		return back();     
 	    }
 	    else {
-        	// session()->flash('message', 'You must be signed in to comment.');
+        	session()->flash('message', 'You must be signed in to comment.');
 
    			return view('auth.login');  
 	    }

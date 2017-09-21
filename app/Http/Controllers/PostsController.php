@@ -43,6 +43,8 @@ class PostsController extends Controller
           new Post(request(['title', 'body']))
         );
 
-   		return redirect('/posts');
+   		session()->flash('message', 'Your post has been submitted.');
+
+      return redirect('/posts');
    }
 }
